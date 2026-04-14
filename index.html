@@ -50,6 +50,21 @@
     }
     .smaller { line-height: 15px; }
     .larger { line-height: 20px; }
+    .stroked-text {
+    color: #FFF; /* Text fill color */
+    -webkit-text-stroke: 3px #BF40BF; /* 2px red stroke */
+    paint-order: stroke fill; /* Ensures stroke renders behind the text */
+    }
+    img.skill-img {
+    width: 20px;
+    height: 20px;
+    }
+    img.monster-img {
+    width: 30%;
+    height: auto;
+    object-fit: contain;
+
+    }
 
   </style>
 </head>
@@ -66,7 +81,7 @@
     </thead>
     <tbody>
       <tr>
-        <td class="fixed-column">Triefende Leere</td>
+        <td class="fixed-column"> Triefende Leere <br /><img src="https://raw.githubusercontent.com/DerFlotsch/MidnightPlot/refs/heads/main/Images/Monsters/MP_MM_Blob.png" alt="Description" class="monster-img"></td>
         <td>Störenfried</td>
         <td>✅</td>
         <td class="collapsible">
@@ -75,70 +90,109 @@
             <p class="smaller">
             <br />
             <b>Besondere Fähigkeiten:</b><br />
-            <img src="https://wow.zamimg.com/images/wow/icons/large/inv_seasnail_bluepink.jpg" alt="Description" width="20" height="20"> <b>Langsam: </b>Ist halt nicht der schnellste!<br /><br />
-            <img src="https://wow.zamimg.com/images/wow/icons/large/inv_seasnail_bluepink.jpg" alt="Description" width="20" height="20"> <b>Bereich Infizieren: </b>Legt eine Pfütze aus Leere in seiner direkten Umgebung, bzw. Nahkampfreichweite ab. Wie lange die Pfütze liegen bleibt, könnt ihr je nach Situation selbst entscheiden.<br /><br />
-            <img src="https://wow.zamimg.com/images/wow/icons/large/inv_seasnail_bluepink.jpg" alt="Description" width="20" height="20"> <b>Bereich Infizieren: </b>Befindet sich eine <i>humanoide Leiche</i> im Bereich der Pfütze, erhebt sich diese als <i>Reanimierte Leiche</i>. <b>🡇</b>
+            <ul>
+            <li><img src="https://wow.zamimg.com/images/wow/icons/large/inv_seasnail_bluepink.jpg" alt="Description" width="20" height="20" class="skill-img"> <b>Langsam: </b>Ist halt nicht der Schnellste!<br /><br />
+            <li><img src="https://wow.zamimg.com/images/wow/icons/large/inv_seasnail_bluepink.jpg" alt="Description" width="20" height="20" class="skill-img"> <b><span class="stroked-text">Bereich Infizieren: </span></b>Legt eine Pfütze aus Leere in seiner direkten Umgebung, bzw. Nahkampfreichweite ab. Löst bei getroffenen Spielern <span class="stroked-text">Leerenbingo </span>aus. Wie lange die Pfütze liegen bleibt, könnt ihr je nach Situation selbst entscheiden.<br /><br />
+            <li><img src="https://wow.zamimg.com/images/wow/icons/large/inv_seasnail_bluepink.jpg" alt="Description" width="20" height="20" class="skill-img"> <b>Dunkle Erweckung: </b>Befindet sich eine <i>humanoide Leiche</i> im Bereich der Pfütze, erhebt sich diese als <i>Reanimierte Leiche</i> Das gilt auch für <i>Kultisten der Zwielichtklinge</i>. <b>🡇</b>
+            </ul>
             </p>
           </details>
         </td>
       </tr>
       <tr>
-        <td class="fixed-column">Reanimierte Leiche</td>
-        <td>Beschwörung</td>
+        <td class="fixed-column">Reanimierte Leiche<br /><img src="https://raw.githubusercontent.com/DerFlotsch/MidnightPlot/refs/heads/main/Images/Monsters/Zombie.png" alt="Description" class="monster-img"></td>
+        <td>Grusel!</td>
         <td>❌</td>
         <td class="collapsible">
           <details>
-            <summary>Click to expand</summary>
-            <p>This is the content for Row 2. It can contain any amount of text.</p>
+            <summary>Wandelnde Leiche, die von der Leere erweckt wurde, wie durch <i>Dunkle Erweckung</i> der <i>Triefenden Leere</i> ⬆</summary>
+            <p class="smaller">
+            <br />
+            <b>Besondere Fähigkeiten:</b><br />
+            <ul>
+            <li><img src="https://wow.zamimg.com/images/wow/icons/large/inv_seasnail_bluepink.jpg" alt="Description" width="20" height="20" class="skill-img"> <b>Untod: </b>Relevant, falls ihr das für Spieler, die Untote spüren einbauen wollt.<br /><br />
+            <li><img src="https://wow.zamimg.com/images/wow/icons/large/inv_seasnail_bluepink.jpg" alt="Description" width="20" height="20" class="skill-img"> <b>Stumme Schreie: </b>Die Seele des verstorbenen ist verloren und hilflos im von der Leere beherrschten Leib gefangen. Selbst im Tod wird sie in Dunkelheit stürzen. Ob Spieler das verhindern können, wenn sie wollen, liegt in eurer Hand.<br /><br />
+            <li><img src="https://wow.zamimg.com/images/wow/icons/large/inv_seasnail_bluepink.jpg" alt="Description" width="20" height="20" class="skill-img"> <b>Explosiver Tod: </b>Kaboom! Die Leiche geht hoch, wenn sie stirbt. Eher wie eine Splittergranate aus Fleisch und Knochen als Leerengrütze. Liegt aber bei euch.
+            </ul>
+            </p>
           </details>
         </td>
       </tr>
       <tr>
-        <td class="fixed-column">Kultist der Zwielichtklinge</td>
+        <td class="fixed-column">Kultist der Zwielichtklinge<br /><img src="https://raw.githubusercontent.com/DerFlotsch/MidnightPlot/refs/heads/main/Images/Monsters/Cultists.png" alt="Description" class="monster-img"></td>
         <td>Vielseitig</td>
         <td>❌</td>
         <td class="collapsible">
           <details>
-            <summary>Click to expand</summary>
-            <p>This is the content for the ROw. It can contain any amount of text.</p>
+            <summary>Kultisten die Xal'atath fanatisch folgen! Durch ihre Rituale und Beschwörungen dienen sie der Leere als Zug nach Azeroth. </summary>
+            <p>
+            <br />
+            <b>Besondere Fähigkeiten:</b><br />
+            <ul>
+            <li><img src="https://wow.zamimg.com/images/wow/icons/large/inv_seasnail_bluepink.jpg" alt="Description" width="20" height="20" class="skill-img"> <b>Waffen der Leere: </b>Ihr entscheidet, was für Waffen die tragen. Können aber gern von der Leere verstärkt sein.<br /><br />
+            <li><img src="https://wow.zamimg.com/images/wow/icons/large/inv_seasnail_bluepink.jpg" alt="Description" width="20" height="20" class="skill-img"> <b>Zauber der Leere: </b>Ihr entscheidet, welche Zauber die können. Orientiert euch dazu gern an Hexenmeistern, Schattenpriestern oder Kultisten des Schattenhammers aus Cataclysm.<br /><br />
+            <li><img src="https://wow.zamimg.com/images/wow/icons/large/inv_seasnail_bluepink.jpg" alt="Description" width="20" height="20" class="skill-img"> <b>Leerenstruktur beschwören: </b>In Gruppen können Kultisten Strukturen der Leere beschwören, was jedoch ihre volle Konzentration erfordert.
+            </ul>
+            </p>
           </details>
         </td>
       </tr>
       <tr>
-        <td class="fixed-column">Schänder</td>
+        <td class="fixed-column">Schänder<br /><img src="https://raw.githubusercontent.com/DerFlotsch/MidnightPlot/refs/heads/main/Images/Monsters/Schänder.png" alt="Description" class="monster-img"></td>
         <td>Nahkampf</td>
         <td>✅</td>
         <td class="collapsible">
           <details>
-            <summary></summary>
-            <p>This is the content for Row 4. It can contain any amount of text.</p>
+            <summary>Fieser Fiesling, der gern austeilt, aber schlecht einsteckt. Mit einer Vorliebe für Lebewesen in Leidenszuständen.</summary>
+            <p>
+            <br />
+            <b>Besondere Fähigkeiten:</b><br />
+            <ul>
+            <li><img src="https://wow.zamimg.com/images/wow/icons/large/inv_seasnail_bluepink.jpg" alt="Description" width="20" height="20" class="skill-img"> <b>Schwäche aufspüren: </b>Der Schänder spürt hohe emotionale Zustände, wovon ihn besonders leidvolle anziehen. Sollte also irgendwo ein Zivilist in Panik verfallen, kann das einen Schänder auf dem Schlachtfeld anziehen.<br /><br />
+            <li><img src="https://wow.zamimg.com/images/wow/icons/large/inv_seasnail_bluepink.jpg" alt="Description" width="20" height="20" class="skill-img"> <b>Messerscharfe Klauen: </b> Streiche und Stiche gleichen denen von Klingenwaffen. Damit durchdringt er Plattenrüstungen jetzt nicht wie Butter, aber er kann sie mit Anstrengung durchdringen.<br /><br />
+            <li><img src="https://wow.zamimg.com/images/wow/icons/large/inv_seasnail_bluepink.jpg" alt="Description" width="20" height="20" class="skill-img"> <b>Schattenschritt: </b>Der große Spaßfaktor bei ihm! <i>Schattenschritt</i> wird hier wortwörtlich ausgelegt. Er kann in einen Schatten abtauchen und in einem anderen wieder auftauchen! Das gilt selbstverständlich auch für Schatten der Spieler selbst. <br></br>Besonders mit der Fähigkeit <i>Dunkelheit erschaffen</i> des <i>Wiedergängers</i> kann das spannend werden. Gleichzeitig kann er natürlich auch nicht abtauchen, wenn es keine Schatten gibt! <i>hint! hint!</i></ul>
+            </p>
           </details>
         </td>
       </tr>
       <tr>
-        <td class="fixed-column">Leerwandler</td>
+        <td class="fixed-column">Leerwandler<br /><img src="https://raw.githubusercontent.com/DerFlotsch/MidnightPlot/refs/heads/main/Images/Monsters/Leerwandler.png" alt="Description" class="monster-img"></td>
         <td>Tank</td>
         <td>❌</td>
         <td class="collapsible">
           <details>
-            <summary></summary>
-            <p>This is the content for Row 5. It can contain any amount of text.</p>
+            <summary>Der Beschützer der Hexenmeister in freier Wildbahn! Verletzt Spieler in Nahkampfreichweite, die ihn nicht attackieren. Kann außerdem getarnte oder verborgene Ziele aufdecken und regeneriert, wenn ihn niemand angreift.</summary>
+            <p>
+            <br />
+            <b>Besondere Fähigkeiten:</b><br />
+            <ul>
+            <li><img src="https://wow.zamimg.com/images/wow/icons/large/inv_seasnail_bluepink.jpg" alt="Description" width="20" height="20" class="skill-img"> <b>Qual: </b>Fügt allen Charakteren in Nahkampfreichweite Pein und Schmerzen zu, die ihn nicht attackieren. Und dafür muss er nicht einmal direkt anzugreifen! Das Ausmaß bestimmt ihr selbst.<br /><br />
+            <li><img src="https://wow.zamimg.com/images/wow/icons/large/inv_seasnail_bluepink.jpg" alt="Description" width="20" height="20" class="skill-img"> <b>Schatten verzehren: </b> Wird der Leerwandler von niemandem angegriffen, kann er beginnen Schatten zu verzehren. Dadurch heilt und stärkt er sich, dessen Ausmaß ihr nach Belieben auslegen könnt! <br></br> Außerdem entlarvt er damit all seine Gegner, die sich durch Zauber oder Schleicherei zu verbergen suchen. Wie lange er kanalisieren kann liegt bei euch - ein Angriff sollte ihn aber sofort unterbrechen.<br /><br />
+            </ul>
+            </p>
           </details>
         </td>
       </tr>
       <tr>
-        <td class="fixed-column">Leerenrufer</td>
+        <td class="fixed-column">Leerenrufer<br /><img src="https://raw.githubusercontent.com/DerFlotsch/MidnightPlot/refs/heads/main/Images/Monsters/Leerenrufer.png" alt="Description" class="monster-img"></td>
         <td>Zauberwirker</td>
         <td>✅</td>
         <td class="collapsible">
           <details>
             <summary></summary>
-            <p>This is the content for Row 6. It can contain any amount of text.</p>
+            <p>
+            <br />
+            <b>Besondere Fähigkeiten:</b><br />
+            <ul>
+            <li><img src="https://wow.zamimg.com/images/wow/icons/large/inv_seasnail_bluepink.jpg" alt="Description" width="20" height="20" class="skill-img"> <b>Qual: </b>Fügt allen Charakteren in Nahkampfreichweite Pein und Schmerzen zu, die ihn nicht attackieren. Und dafür muss er nicht einmal direkt anzugreifen! Das Ausmaß bestimmt ihr selbst.<br /><br />
+            <li><img src="https://wow.zamimg.com/images/wow/icons/large/inv_seasnail_bluepink.jpg" alt="Description" width="20" height="20" class="skill-img"> <b>Schatten verzehren: </b> Halten sich die Spieler für Spott-Immun, beginnt der Leerwandler Schatten zu verzehren. Dadurch heilt und stärkt er sich, dessen Ausmaß ihr nach Belieben auslegen könnt! <br></br> Außerdem entlarvt er damit all seine Gegner, die sich durch Zauber oder Schleicherei zu verbergen suchen. Den Zauber muss der Leerwandler allerdings aktiv kanalisieren.<br /><br />
+            </ul>
+            </p>
           </details>
         </td>
       </tr>
       <tr>
-        <td class="fixed-column">Plager</td>
+        <td class="fixed-column">Plager<br /><img src="https://raw.githubusercontent.com/DerFlotsch/MidnightPlot/refs/heads/main/Images/Monsters/Plager.png" alt="Description" class="monster-img"></td>
         <td>Luft / Fernkampf</td>
         <td>❌</td>
         <td class="collapsible">
@@ -149,7 +203,7 @@
         </td>
       </tr>
       <tr>
-        <td class="fixed-column">Leerensense</td>
+        <td class="fixed-column">Leerensense<br /><img src="https://raw.githubusercontent.com/DerFlotsch/MidnightPlot/refs/heads/main/Images/Monsters/Leerensense.png" alt="Description" class="monster-img"></td>
         <td>Luft / Nahkampf</td>
         <td>❌</td>
         <td class="collapsible">
@@ -160,7 +214,7 @@
         </td>
       </tr>
       <tr>
-        <td class="fixed-column">Wiedergänger</td>
+        <td class="fixed-column">Wiedergänger<br /><img src="https://raw.githubusercontent.com/DerFlotsch/MidnightPlot/refs/heads/main/Images/Monsters/Revenant.png" alt="Description" class="monster-img"></td>
         <td>Starker Zauberwirker</td>
         <td>✅</td>
         <td class="collapsible">
@@ -171,7 +225,7 @@
         </td>
       </tr>
       <tr>
-        <td class="fixed-column">Schattenbild</td>
+        <td class="fixed-column">Schattenbild<br /><img src="https://raw.githubusercontent.com/DerFlotsch/MidnightPlot/refs/heads/main/Images/Monsters/ItsYou.png" alt="Description" class="monster-img"></td>
         <td>Beschwörung</td>
         <td>❌</td>
         <td class="collapsible">
@@ -182,7 +236,7 @@
         </td>
       </tr>
       <tr>
-        <td class="fixed-column">Ultradon</td>
+        <td class="fixed-column">Ultradon<br /><img src="https://raw.githubusercontent.com/DerFlotsch/MidnightPlot/refs/heads/main/Images/Monsters/Ultradon.png" alt="Description" class="monster-img"></td>
         <td>Elite Nahkampf</td>
         <td>❌</td>
         <td class="collapsible">
@@ -193,7 +247,7 @@
         </td>
       </tr>
       <tr>
-        <td class="fixed-column">Domanaar</td>
+        <td class="fixed-column">Domanaar<br /><img src="https://raw.githubusercontent.com/DerFlotsch/MidnightPlot/refs/heads/main/Images/Monsters/Domanaar.png" alt="Description" class="monster-img"></td>
         <td>Elite Zauberwirker</td>
         <td>❌</td>
         <td class="collapsible">
